@@ -26,7 +26,7 @@ repeat line cycle to do all 480 lines.
 
 For more explanation please read the code, and see the next link for info on hardware :
 
-http://img.hqew.com/.../Elect.../20080807001540982DVDL83.PDF
+https://hackaday.com/tag/controllerless-lcd/
 
 The LCD main signals are : line load, frame, data 4 bit wide, clock, M signal.
 
