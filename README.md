@@ -32,3 +32,5 @@ The LCD main signals are : line load, frame, data 4 bit wide, clock, M signal.
 
 They need +5V, -22V voltage for the operation, provided by a MC34063 converter.
 
+Update January 2023 : Ricoh LCD drive, animated graphics, touch decode. 
+
