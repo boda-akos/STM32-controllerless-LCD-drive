@@ -609,68 +609,6 @@ void dly(void) {
   }
   
 /* 
-float sx = 0, sy = 1, mx = 1, my = 0, hx = -1, hy = 0;    // Saved H, M, S x & y multipliers
-float sdeg=0, mdeg=0, hdeg=0;
-uint16_t osx=62, osy=62, omx=62, omy=62, ohx=62, ohy=62;  // Saved H, M, S x & y coords
-int xx0=0, xx1=0, yy0=0, yy1=0;
-uint32_t targetTime = 0;                    // for next 1 second timeout
-
-boolean initial = 1;
-
-uint8_t conv2d(const char* p) {
-  uint8_t v = 0;
-  if ('0' <= *p && *p <= '9')
-    v = *p - '0';
-  return 10 * v + *++p - '0';
-}
-uint8_t hh=conv2d(__TIME__), mm=conv2d(__TIME__+3), ss=conv2d(__TIME__+6);  // Get H, M, S from compile time
-
-void setup() { 
- begin(); 
-delay(100);
-//Serial.begin(9600); int i=0; while (i<99) Serial.Println(i++);   
- setRotation(1);
- fillScreen( 1);
-  
-   setTextColor(WHITE,  1);  // Adding a background colour erases previous text automatically
-  
-  // Draw clock face
-   fillCircle(62, 62, 59,  1);
-   fillCircle(62, 62, 55,  1);
-
-  // Draw 12 lines
-  for(int i = 0; i<360; i+= 30) {
-    sx = cos((i-90)*0.0174532925);
-    sy = sin((i-90)*0.0174532925);
-    xx0 = sx*57+62;
-    yy0 = sy*57+62;
-    xx1 = sx*50+62;
-    yy1 = sy*50+62;
-
-     drawLine(xx0, yy0, xx1, yy1, YELLOW);
-  }
-
-  // Draw 60 dots
-  for(int i = 0; i<360; i+= 6) {
-    sx = cos((i-90)*0.0174532925);
-    sy = sin((i-90)*0.0174532925);
-    xx0 = sx*51+62;
-    yy0 = sy*51+62;
-    // Draw minute markers
-     drawPixel(xx0, yy0, WHITE);
-    
-    // Draw main quadrant dots
-    if(i==0 || i==180)  fillCircle(xx0, yy0, 2, WHITE);
-    if(i==90 || i==270)  fillCircle(xx0, yy0, 2, WHITE);
-  }
-
-  // fillCircle(60, 62, 3, WHITE);
-
-  targetTime = millis() + 1000; 
-}
-
-
-void loop(void){
 
 */
 void Pointer(void) {
