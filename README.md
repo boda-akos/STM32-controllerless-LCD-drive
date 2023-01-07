@@ -33,4 +33,6 @@ The LCD main signals are : line load, frame, data 4 bit wide, clock, M signal.
 They need +5V, -22V voltage for the operation, provided by a MC34063 converter.
 
 Update January 2023 : Ricoh copier 640x240 LCD drive, animated graphics, touch decode. 
+Uses the RCT6 processor for greater RAM. Touch decode hardware is a simple PNP / NPN transistor matrix. 
+The transistors are digital type (5 kOhm R network on Base). Interrupt driven decoder firmware using two ADC channels.
 
